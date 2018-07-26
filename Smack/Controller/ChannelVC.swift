@@ -18,6 +18,10 @@ class ChannelVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    }
     
 
 }
