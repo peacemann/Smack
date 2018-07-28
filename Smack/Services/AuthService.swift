@@ -22,6 +22,8 @@ class AuthService {
         }
     }
     
+    
+    
     var authToken: String{
         get {
             return defaults.value(forKey: TOKEN_KEY) as! String
@@ -40,6 +42,8 @@ class AuthService {
             defaults.set(newValue, forKey: USER_EMAIL)
         }
     }
+    
+    
     
     func registerUser(email: String, password:String, completion: @escaping CompletionHandler) {
         
