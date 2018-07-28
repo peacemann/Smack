@@ -23,6 +23,7 @@
 		469440322109FFF6002DB2D8 /* NewGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469440312109FFF6002DB2D8 /* NewGradientView.swift */; };
 		46944035210A14A7002DB2D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46944034210A14A7002DB2D8 /* Constants.swift */; };
 		46944037210A1B0E002DB2D8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46944036210A1B0E002DB2D8 /* LoginVC.swift */; };
+		46A69C87210C70F600DD7529 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A69C86210C70F600DD7529 /* CircleImage.swift */; };
 		46B60108210A24950058D2C3 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B60107210A24950058D2C3 /* CreateAccountVC.swift */; };
 		B573FA46077F655FC927F7ED /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2595A69012136ED7FF233D5 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		469440312109FFF6002DB2D8 /* NewGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGradientView.swift; sourceTree = "<group>"; };
 		46944034210A14A7002DB2D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46944036210A1B0E002DB2D8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		46A69C86210C70F600DD7529 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		46B60107210A24950058D2C3 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		8CE133D33D3897FD52501148 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		E2595A69012136ED7FF233D5 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				469440312109FFF6002DB2D8 /* NewGradientView.swift */,
 				468AC858210B611600DD94E5 /* RoundedButton.swift */,
 				468AC85E210BA12200DD94E5 /* AvatarCell.swift */,
+				46A69C86210C70F600DD7529 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				469440272109B637002DB2D8 /* SWRevealViewController.m in Sources */,
 				469440322109FFF6002DB2D8 /* NewGradientView.swift in Sources */,
 				468AC85D210B9DF600DD94E5 /* AvatarPickerVC.swift in Sources */,
+				46A69C87210C70F600DD7529 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
