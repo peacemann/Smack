@@ -82,7 +82,7 @@ class AuthService {
 //                    }
 //                }
                 
-                //Using SwiftJSON
+                //Using SwiftJSON.
                 guard let data = response.data else { return }
                 let json = try! JSON(data: data)
                 self.userEmail = json["user"].stringValue

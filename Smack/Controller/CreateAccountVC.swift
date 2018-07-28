@@ -118,7 +118,7 @@ class CreateAccountVC: UIViewController {
         
         
         // Let keyboard disappear when user pressed any other point on screen
-        
+        //
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap) )
         view.addGestureRecognizer(tap)
     }
