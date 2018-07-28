@@ -51,6 +51,8 @@ class ChannelVC: UIViewController {
 //            userImg.backgroundColor = UIColor(red: newColorArray[0], green: newColorArray[1], blue: newColorArray[2], alpha: newColorArray[3])
             
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
+
+            
 //
             
         } else {
