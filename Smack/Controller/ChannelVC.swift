@@ -24,6 +24,11 @@ class ChannelVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        setupUserInfo()
+    }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
         
@@ -43,29 +48,34 @@ class ChannelVC: UIViewController {
     }
     
     @objc func userDataDidChange(_ notif: Notification) {
+        
+        setupUserInfo()
+    }
+    
+    func setupUserInfo() {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             
             //My method (Alternative) to convert String to CGFloat Color
             
-//            var bgColor = UserDataService.instance.avatarColor
-//            bgColor = String(bgColor.dropFirst())
-//            bgColor = String(bgColor.dropLast())
-//
-//            let colorArray = bgColor.split(separator: ",")
-//            var newColorArray: [CGFloat] = []
-//
-//            for item in colorArray {
-//                newColorArray.append( CGFloat((item as NSString).floatValue) )
-//            }
-//
-//            userImg.backgroundColor = UIColor(red: newColorArray[0], green: newColorArray[1], blue: newColorArray[2], alpha: newColorArray[3])
+            //            var bgColor = UserDataService.instance.avatarColor
+            //            bgColor = String(bgColor.dropFirst())
+            //            bgColor = String(bgColor.dropLast())
+            //
+            //            let colorArray = bgColor.split(separator: ",")
+            //            var newColorArray: [CGFloat] = []
+            //
+            //            for item in colorArray {
+            //                newColorArray.append( CGFloat((item as NSString).floatValue) )
+            //            }
+            //
+            //            userImg.backgroundColor = UIColor(red: newColorArray[0], green: newColorArray[1], blue: newColorArray[2], alpha: newColorArray[3])
             
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-
             
-//
+            
+            //
             
         } else {
             loginBtn.setTitle("Login", for: .normal)

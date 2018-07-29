@@ -183,6 +183,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="UXk-eN-mw7" eventType="touchUpInside" id="6S4-Px-Emp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-24-g8g">
                                 <rect key="frame" x="62" y="346" width="251" height="30"/>
@@ -243,6 +246,10 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Fe1-kn-vAh">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -250,16 +257,21 @@
                             <constraint firstItem="Z1K-24-g8g" firstAttribute="top" secondItem="tpJ-jL-MJI" secondAttribute="bottom" id="9d6-wf-6D2"/>
                             <constraint firstItem="tpJ-jL-MJI" firstAttribute="centerX" secondItem="Ons-pe-eJy" secondAttribute="centerX" id="AOe-sJ-Apf"/>
                             <constraint firstItem="ekf-fy-HuW" firstAttribute="top" secondItem="5ma-p6-1Q9" secondAttribute="top" constant="70" id="JLg-kl-dz1"/>
+                            <constraint firstItem="Fe1-kn-vAh" firstAttribute="centerX" secondItem="Ons-pe-eJy" secondAttribute="centerX" id="LGt-9F-Nwq"/>
                             <constraint firstItem="tpJ-jL-MJI" firstAttribute="top" secondItem="g7J-3S-E8j" secondAttribute="bottom" constant="40" id="Sre-ID-13R"/>
                             <constraint firstItem="ekf-fy-HuW" firstAttribute="centerX" secondItem="Ons-pe-eJy" secondAttribute="centerX" id="Ys6-hh-erm"/>
                             <constraint firstItem="Z1K-24-g8g" firstAttribute="centerX" secondItem="Ons-pe-eJy" secondAttribute="centerX" id="cHz-gw-AVb"/>
                             <constraint firstItem="5ma-p6-1Q9" firstAttribute="trailing" secondItem="E6h-c0-Zqb" secondAttribute="trailing" constant="20" id="rku-jS-pJP"/>
                             <constraint firstItem="g7J-3S-E8j" firstAttribute="top" secondItem="ekf-fy-HuW" secondAttribute="bottom" constant="40" id="suc-qd-PEE"/>
+                            <constraint firstItem="Fe1-kn-vAh" firstAttribute="centerY" secondItem="Ons-pe-eJy" secondAttribute="centerY" constant="-100" id="tQ6-TQ-fiq"/>
                             <constraint firstItem="E6h-c0-Zqb" firstAttribute="top" secondItem="5ma-p6-1Q9" secondAttribute="top" constant="8" id="vy7-bj-78n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5ma-p6-1Q9"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="1vr-tU-NRL" id="PLn-0w-wdr"/>
+                        <outlet property="spinner" destination="Fe1-kn-vAh" id="usS-cv-Skm"/>
+                        <outlet property="usernameTxt" destination="EMm-z7-SRn" id="cZe-7L-hRD"/>
                         <segue destination="WpW-oS-pJ9" kind="show" identifier="toCreateAccount" id="gCG-pg-Qju"/>
                     </connections>
                 </viewController>
