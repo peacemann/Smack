@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="125" width="375" height="427"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ofk-x1-GP7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="Ofk-x1-GP7" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofk-x1-GP7" id="Fon-nQ-EfJ">
@@ -101,6 +101,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="QNO-9C-FET" id="nSW-JE-o6W"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -126,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="sNH-Ho-eWF" id="ve1-Iw-RWu"/>
+                        <outlet property="tableView" destination="qEg-q7-Rb3" id="tzK-Hh-XBu"/>
                         <outlet property="userImg" destination="Ica-ba-rdw" id="15w-lC-bDm"/>
                         <segue destination="UXk-eN-mw7" kind="show" identifier="toLogin" id="Vvk-Ov-K2B"/>
                     </connections>
