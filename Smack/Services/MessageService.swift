@@ -22,7 +22,7 @@ class MessageService {
             if response.result.error == nil {
                 guard let data = response.data else { return }
 
-                
+//
 // //Swift 4 : A New way to handle json response
 //                do {
 //                    self.channels = try JSONDecoder().decode([Channel].self, from: data)
@@ -41,14 +41,14 @@ class MessageService {
                         self.channels.append(channel)
                     }
                     //print(self.channels[0].channelTitle)
-                    //print(channels.isEmpty)
+                    //print(self.channels.isEmpty)
                     completion(true)
                 }
-                
+
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
-            }
+              }
         }
     }
     

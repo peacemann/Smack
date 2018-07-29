@@ -10,7 +10,7 @@ import Foundation
 
 struct Channel: Decodable {
     
-//    Swift 4 : Alternative way for json
+//    //Swift 4 : Alternative way for json
 //    public private(set) var _id: String!
 //    public private(set) var name: String!
 //    public private(set) var description: String!
