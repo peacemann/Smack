@@ -607,6 +607,7 @@
                         <viewLayoutGuide key="safeArea" id="3nm-jb-JOS"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="rdU-2q-JHo" id="LNh-kL-DlH"/>
                         <outlet property="menuBtn" destination="TFi-NZ-uUy" id="IJY-VW-uxe"/>
                     </connections>
                 </viewController>
